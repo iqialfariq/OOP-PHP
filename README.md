@@ -247,11 +247,12 @@ __NAMESPACE__
 
 ```php
 // Cara membuat Constant dengan define dan const
-    // Tidak bisa disimpan didalam kelas / harus disimpan diluar
-    define("NAMA_CONSTANT", "NILAI");
 
-    // Bisa disimpan didalam class
-    const NAMA = "Budi";
+// Tidak bisa disimpan didalam kelas / harus disimpan diluar
+define("NAMA_CONSTANT", "NILAI");
+
+// Bisa disimpan didalam class
+const NAMA = "Budi";
 ```
 
 ---
@@ -335,7 +336,8 @@ spl_autoload_register(function ($class) {
 
 ```
 Cara membaca kode:
-"PHP, daftarkan function autoload. Ketika ada class yang dibutuhkan tetapi belum dimuat, masukkan nama class tersebut ke $class. Kemudian cari file dengan nama class tersebut di folder Produk dan masukkan file tersebut."
+"PHP, daftarkan function autoload. Ketika ada class yang dibutuhkan tetapi belum dimuat,
+masukkan nama class tersebut ke $class. Kemudian cari file dengan nama class tersebut di folder Produk dan masukkan file tersebut."
 ```
 ---
 
