@@ -1,6 +1,7 @@
 # 🧠 Penjelasan OOP PHP
 <p align="justify">
-OOP (Object-Oriented Programming) adalah pendekatan pemrograman yang menyusun program berdasarkan object (objek). Dalam OOP, data dan fungsi yang berhubungan dengan data tersebut dikelompokkan ke dalam sebuah class, kemudian dari class tersebut kita dapat membuat object.
+OOP (Object-Oriented Programming) adalah pendekatan pemrograman yang menyusun program berdasarkan object (objek). Dalam OOP, data dan fungsi yang
+berhubungan dengan data tersebut dikelompokkan ke dalam sebuah class, kemudian dari class tersebut kita dapat membuat object.
 </p>
 
 ---
@@ -26,7 +27,7 @@ Tujuan utama OOP adalah membuat program menjadi:
 → Class merupakan blueprint / template untuk membuat instance dari object.
 → Class mendefinisikan sebuah object.
 → Class menyimpan data dan perilaku yang disebut dengan property dan method.
-→ Class tidak boleh di awali dengan angka dan space.
+→ Class tidak boleh diawali dengan angka dan space.
 ```
 
 ```php
@@ -47,8 +48,8 @@ class namaClass {
 ## 🎯 OBJECT
 ```
 → Object merupakan tempat untuk hasil dari class.
-→ Object dapat di buat menggunakan satu class.
-→ Object di buat dengan menggunakan keyword NEW.
+→ Object dapat dibuat menggunakan satu class.
+→ Object dibuat dengan menggunakan keyword NEW.
 ```
 
 ```php
@@ -61,8 +62,8 @@ $produk3 = new product();
 ## 🧱 PROPERTY
 ```
 → Property mempresentasikan data / keadaan dari sebuah object.
-→ Property disebut juga sebagai variabel yang ada di dalam object / class (member variabel).
-→ Property di buat dengan menambahkan keyword visibility di depan nya.
+→ Property disebut juga sebagai variabel yang ada didalam object / class (member variabel).
+→ Property dibuat dengan menambahkan keyword visibility didepan nya.
 ```
 
 ```php
@@ -75,8 +76,8 @@ public $judul, $penulis, $penerbit, $harga;
 ## ⚙️ METHOD
 ```
 → Method mempresentasikan perilaku dari sebuah object.
-→ Method di sebut juga function yang ada di dalam class.
-→ Method di buat dengan menambahkan keyword visibility di depan nya.
+→ Method disebut juga function yang ada didalam class.
+→ Method dibuat dengan menambahkan keyword visibility didepan nya.
 ```
 
 ```php
@@ -90,7 +91,7 @@ public function getLable() {
 
 ## 🏗️ CONSTRUCTOR
 ```
-→ Constructor merupakan method khusus di dalam class yang otomatis dijalankan ketika object dibuat.
+→ Constructor merupakan method khusus didalam class yang otomatis dijalankan ketika object dibuat.
 → Constructor digunakan untuk mengisi property object dengan data yang dikirim saat object dibuat.
 → Constructor dibuat menggunakan method __construct().
 ```
@@ -148,7 +149,7 @@ class Komik extends Produk {
 
 ## 🔐 VISIBILITY
 ```
-→ Visibility merupakan aturan yang menentukan siapa yang boleh mengakses property dan method yang ada di dalam class.
+→ Visibility merupakan aturan yang menentukan siapa yang boleh mengakses property dan method yang ada didalam class.
 → Visibility digunakan untuk mengatur hak akses terhadap property dan method.
 → Dengan visibility, kita bisa menentukan apakah property atau method dapat diakses dari luar class, dari class anak, atau hanya dari class itu sendiri.
 → Visibility dibuat menggunakan keyword public, protected, private.
@@ -246,10 +247,10 @@ __NAMESPACE__
 
 ```php
 // Cara membuat Constant dengan define dan const
-    // Tidak bisa di simpan di dalam kelas / harus di simpan di luar
+    // Tidak bisa disimpan didalam kelas / harus disimpan diluar
     define("NAMA_CONSTANT", "NILAI");
 
-    // Bisa di simpan di dalam class
+    // Bisa disimpan didalam class
     const NAMA = "Budi";
 ```
 
@@ -291,7 +292,7 @@ echo $kucing->bersuara(); // Output: Meong
 → Interface adalah sebuah kontrak atau aturan yang menentukan method apa saja yang wajib dimiliki oleh class.
 → Interface digunakan untuk menentukan kemampuan atau perilaku yang harus dimiliki oleh class.
 → Interface tidak digunakan untuk membuat object secara langsung.
-→ Class yang menggunakan interface wajib mengimplementasikan method yang dideklarasikan di dalamnya.
+→ Class yang menggunakan interface wajib mengimplementasikan method yang dideklarasikan didalamnya.
 → Interface dibuat menggunakan keyword interface.
 → Cara menggunakan interface untuk child class dengan keyword implements.
 ```
@@ -330,11 +331,12 @@ echo $burung->terbang(); // Output: Burung sedang terbang
 spl_autoload_register(function ($class) {
     require_once "Produk/" . $class . ".php";
 });
+```
 
+```
 Cara membaca kode:
 "PHP, daftarkan function autoload. Ketika ada class yang dibutuhkan tetapi belum dimuat, masukkan nama class tersebut ke $class. Kemudian cari file dengan nama class tersebut di folder Produk dan masukkan file tersebut."
 ```
-
 ---
 
 ## 🧭 NAMSESPACE
