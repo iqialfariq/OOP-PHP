@@ -300,6 +300,7 @@ echo $kucing->bersuara(); // Output: Meong
 
 ```php
 // Cara membuat Interface
+
 // Membuat sebuah interface
 interface BisaTerbang {
     // Menjadi aturan yang wajib dimiliki class yang menggunakan interface tersebut
